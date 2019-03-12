@@ -91,10 +91,9 @@
   !*** ./source/js/main.js ***!
   \***************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("// Add your script here\n\n\n//# sourceURL=webpack:///./source/js/main.js?");
+eval("// Add your script here\n\n//# sourceURL=webpack:///./source/js/main.js?");
 
 /***/ }),
 
@@ -103,10 +102,9 @@ eval("// Add your script here\n\n\n//# sourceURL=webpack:///./source/js/main.js?
   !*** ./source/js/menu.js ***!
   \***************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\n\nvar container = document.querySelector(\".container\");\nvar menu = document.querySelector(\".menu\");\nvar mobileMenuTrigger = document.querySelector(\".menu-trigger\");\nvar desktopMenu = document.querySelector(\".menu__inner--desktop\");\nvar desktopMenuTrigger = document.querySelector(\".menu__sub-inner-more-trigger\");\nvar menuMore = document.querySelector(\".menu__sub-inner-more\");\nvar mobileQuery = getComputedStyle(document.body).getPropertyValue(\"--phoneWidth\");\n\nvar isMobile = function isMobile() {\n  return window.matchMedia(mobileQuery).matches;\n};\n\nvar isMobileMenu = function isMobileMenu() {\n  mobileMenuTrigger && mobileMenuTrigger.classList.toggle(\"hidden\", !isMobile());\n  menu && menu.classList.toggle(\"hidden\", isMobile());\n  menuMore && menuMore.classList.toggle(\"hidden\", !isMobile());\n}; // Common\n\n\nmenu && menu.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nmenuMore && menuMore.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nisMobileMenu();\ndocument.body.addEventListener(\"click\", function () {\n  if (!isMobile() && !menuMore.classList.contains(\"hidden\")) {\n    menuMore.classList.add(\"hidden\");\n  } else if (isMobile() && !menu.classList.contains(\"hidden\")) {\n    menu.classList.add(\"hidden\");\n  }\n});\nwindow.addEventListener(\"resize\", isMobileMenu); // Mobile menu\n\nmobileMenuTrigger && mobileMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menu && menu.classList.toggle(\"hidden\");\n}); // Desktop menu\n\ndesktopMenuTrigger && desktopMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menuMore && menuMore.classList.toggle(\"hidden\");\n\n  if (menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right) {\n    menuMore.style.left = \"auto\";\n    menuMore.style.right = 0;\n  }\n});\n\n//# sourceURL=webpack:///./source/js/menu.js?");
+eval("var container = document.querySelector(\".container\");\nvar menu = document.querySelector(\".menu\");\nvar mobileMenuTrigger = document.querySelector(\".menu-trigger\");\nvar desktopMenu = document.querySelector(\".menu__inner--desktop\");\nvar desktopMenuTrigger = document.querySelector(\".menu__sub-inner-more-trigger\");\nvar menuMore = document.querySelector(\".menu__sub-inner-more\");\nvar mobileQuery = getComputedStyle(document.body).getPropertyValue(\"--phoneWidth\");\n\nvar isMobile = function isMobile() {\n  return window.matchMedia(mobileQuery).matches;\n};\n\nvar isMobileMenu = function isMobileMenu() {\n  mobileMenuTrigger && mobileMenuTrigger.classList.toggle(\"hidden\", !isMobile());\n  menu && menu.classList.toggle(\"hidden\", isMobile());\n  menuMore && menuMore.classList.toggle(\"hidden\", !isMobile());\n}; // Common\n\n\nmenu && menu.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nmenuMore && menuMore.addEventListener(\"click\", function (e) {\n  return e.stopPropagation();\n});\nisMobileMenu();\ndocument.body.addEventListener(\"click\", function () {\n  if (!isMobile() && !menuMore.classList.contains(\"hidden\")) {\n    menuMore.classList.add(\"hidden\");\n  } else if (isMobile() && !menu.classList.contains(\"hidden\")) {\n    menu.classList.add(\"hidden\");\n  }\n});\nwindow.addEventListener(\"resize\", isMobileMenu); // Mobile menu\n\nmobileMenuTrigger && mobileMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menu && menu.classList.toggle(\"hidden\");\n}); // Desktop menu\n\ndesktopMenuTrigger && desktopMenuTrigger.addEventListener(\"click\", function (e) {\n  e.stopPropagation();\n  menuMore && menuMore.classList.toggle(\"hidden\");\n\n  if (menuMore.getBoundingClientRect().right > container.getBoundingClientRect().right) {\n    menuMore.style.left = \"auto\";\n    menuMore.style.right = 0;\n  }\n});\n\n//# sourceURL=webpack:///./source/js/menu.js?");
 
 /***/ }),
 
@@ -117,7 +115,7 @@ eval("\n\nvar container = document.querySelector(\".container\");\nvar menu = do
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /Users/radek/Documents/Git/Moje/hugoBasicExample/themes/terminal/source/js/main.js */\"./source/js/main.js\");\nmodule.exports = __webpack_require__(/*! /Users/radek/Documents/Git/Moje/hugoBasicExample/themes/terminal/source/js/menu.js */\"./source/js/menu.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/main.js_./source/js/menu.js?");
+eval("__webpack_require__(/*! C:\\Users\\Will\\portfolio\\themes\\terminal\\source\\js\\main.js */\"./source/js/main.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Will\\portfolio\\themes\\terminal\\source\\js\\menu.js */\"./source/js/menu.js\");\n\n\n//# sourceURL=webpack:///multi_./source/js/main.js_./source/js/menu.js?");
 
 /***/ })
 
